@@ -21,7 +21,7 @@ util.inherits(FilterGenerator, yeoman.generators.NamedBase);
 FilterGenerator.prototype.askFor = function askFor() {
     var cb = this.async();
 
-    cgUtils.askForModuleAndDir('filter',this,false,cb);
+    cgUtils.askForModuleAndDir('filter',this,true,cb);
 };
 
 FilterGenerator.prototype.files = function files() {

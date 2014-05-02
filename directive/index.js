@@ -30,7 +30,7 @@ DirectiveGenerator.prototype.askFor = function askFor() {
 
     this.prompt(prompts, function (props) {
         this.needpartial = props.needpartial;
-        cgUtils.askForModuleAndDir('directive',this,this.needpartial,cb);
+        cgUtils.askForModuleAndDir('directive',this,true,cb);
     }.bind(this));
 
 };
